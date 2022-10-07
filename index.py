@@ -1,32 +1,33 @@
+print("WHAT MATHEMATICAL PROBLEM DO YOU WANT TO SOLVE?")
 
-print("What mathematical problem do you want to solve?")
+print(f"""
+***Quick Help***
 
-problem = input()
+> Type Addition - To 'add' two numbers
+> Type Subtraction - To 'minus' a number from the other
+> Type Multiplication - To 'multiply' two numbers
+> Type Division - To 'divide' two numbers
+> Type Modulus - To check for the 'remainder'. The first number must be higher.
+""")
+problem = input().capitalize()
+
+number1 = float(input("Enter first number: "))
+number2 = float(input("Enter second number: "))
 
 if problem == "Addition":
-    number1 = float(input("Enter first number: "))
-    number2 = float(input("Enter second number: "))
     print(str(number1) + " + " + str(number2) + " = " + str(number1 + number2))
-    
+
 elif problem == "Subtraction":
-    number1 = float(input("Enter first number: "))
-    number2 = float(input("Enter second number: "))
     print(str(number1) + " - " + str(number2) + " = " + str(number1 - number2))
-    
+
 elif problem == "Multiplication":
-    number1 = float(input("Enter first number: "))
-    number2 = float(input("Enter second number: "))
     print(str(number1) + " * " + str(number2) + " = " + str(number1 * number2))
-    
+
 elif problem == "Division":
-    number1 = float(input("Enter first number: "))
-    number2 = float(input("Enter second number: "))
     print(str(number1) + " / " + str(number2) + " = " + str(number1 / number2))
-    
-elif problem == "Modulus operand":
-    number1 = float(input("Enter first number: "))
-    number2 = float(input("Enter second number: "))
+
+elif problem == "Modulus":
     print(str(number1) + " % " + str(number2) + " = " + str(number1 % number2))
-    
+
 else:
     print("Invalid Entry")
